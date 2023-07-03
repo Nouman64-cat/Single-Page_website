@@ -1,0 +1,93 @@
+
+#hero-container{
+  background-image: url(../public/layer-5.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  background-position: bottom -70px left -50px;
+  height: 90vh;
+  background-color: #321C04;
+}
+#work-container{
+  background-image: url(../public/layer-2.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position: bottom 10px right 10px;
+  height: 90vh;
+  background-color: #321C04;
+}
+#contact-container{
+  background-image: url(../public/group-2.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position: top 10px right 10px;
+  height: 50vh;
+  background-color: #321C04;
+}
+#card-front{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+/* #card-front:hover::after{
+  content: "Click to flip";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F2EAD3;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #000000;
+  background: #F2EAD3;
+
+} */
+.rounded-custom{
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+#card-back {
+  position: relative;
+}
+
+#card-back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/flower-art.png);
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Adjust the opacity value between 0 and 1 */
+}
+.hover-message {
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+
+#card-front:hover .hover-message {
+  opacity: 1;
+}
+h1{
+  font-family: "Handlee", sans-serif;
+}
+
